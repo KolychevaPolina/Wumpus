@@ -121,31 +121,7 @@ public class NavigatorAgent extends Agent {
                     }
                 }
             }
-            //WumpusKnowledgeBase WKB = new WumpusKnowledgeBase(4, 4);
-            //WKB.askSafeRooms(5);
 
-            // *** temp solution ***
-//            if (stench && breeze && time == 0){
-//                advicedAction = WumpusWorldAgent.Constants.MESSAGE_FORWARD;
-//                time++;
-//            } else if (stench && time == 1){
-//                advicedAction = WumpusWorldAgent.Constants.MESSAGE_RIGHT;
-//                time++;
-//            } else if (stench && time == 2) {
-//                advicedAction = WumpusWorldAgent.Constants.MESSAGE_FORWARD;
-//                time++;
-//            } else if (stench && breeze && time == 3){
-//                advicedAction = WumpusWorldAgent.Constants.MESSAGE_LEFT;
-//                time++;
-//            }  else if (stench && breeze && time == 4){
-//            advicedAction = WumpusWorldAgent.Constants.MESSAGE_FORWARD;
-//            time++;
-//            } else if (!stench && !breeze && time == 5) {
-//                advicedAction = WumpusWorldAgent.Constants.MESSAGE_LEFT;
-//                time++;
-//            } else if (!stench && !breeze && time == 6) {
-//                advicedAction = WumpusWorldAgent.Constants.MESSAGE_FORWARD;
-//            }
             switch (time){
                 case 0: advicedAction = WumpusWorldAgent.Constants.MESSAGE_FORWARD; time++; break;
                 case 1: advicedAction = WumpusWorldAgent.Constants.MESSAGE_RIGHT; time++; break;
